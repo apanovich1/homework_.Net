@@ -6,7 +6,7 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            string[] socks = new string[5] { "A", "B", "C", "A", "B"};
+            string[] socks = new string[5] { "A", "B", "C", "A", "B", "D"};
             int result = 0;
             foreach (string sock in socks)
             if (socks[0] == socks[1])
