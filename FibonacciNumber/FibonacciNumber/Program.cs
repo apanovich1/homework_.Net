@@ -1,12 +1,8 @@
-﻿using System.Numerics;
+﻿//using System.Numerics;
 class FibonacciNumber
 {
-    public static int Fib(BigInteger num)
+    public static int Fib(int num)
     {
-        // int num =
-        // int num = ulong (n);
-       // BigInteger assignedFromLong = num;
-     //  num = new BigInteger(number);
         if (num <= 1)
         {
             return num;
@@ -21,11 +17,7 @@ class FibonacciNumber
     {
         Console.WriteLine("Insert your number (0-200): ");
         int num = Convert.ToInt32(Console.ReadLine());
-
         Console.WriteLine(Fib(num));
-       // BigInteger
-           // Convert.ToInt32
     }
 
 }
-//long l=Long.parseLong(str);
