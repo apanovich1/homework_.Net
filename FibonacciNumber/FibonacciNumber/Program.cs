@@ -1,23 +1,25 @@
-﻿//using System.Numerics;
-class FibonacciNumber
+﻿using System.Numerics;
+class FibonacciNth
 {
-    public static int Fib(int num)
+    public static BigInteger Fibonacci(int num)
     {
-        if (num <= 1)
-        {
-            return num;
-        }
-        else
-        {
-            return Fib(num - 1) + Fib(num - 2);
-        }
-    }
+        var previousValue = new BigInteger(-1);
+        var currentResult = new BigInteger(1);
 
+        for (var i = 0; i <= num; ++i)
+        {
+            var sum = currentResult + previousValue;
+            previousValue = currentResult;
+            currentResult = sum;
+        }
+
+        return currentResult;
+    }
     public static void Main()
     {
-        Console.WriteLine("Insert your number (0-200): ");
-        int num = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine(Fib(num));
+       Console.WriteLine("Insert your fib nth(0-200): ");
+       var num = Int32.Parse(Console.ReadLine());
+       Console.WriteLine(Fibonacci(num));
     }
 
 }
