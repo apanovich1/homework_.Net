@@ -1,16 +1,21 @@
-﻿using System;
-using System.Text.RegularExpressions;
-
+﻿using System.Text.RegularExpressions;
 public class CensoredString
 {
     public static void Main()
     {
         string input = "Wh*r* d*d my v*w*ls g*?";
+        ReplaceVowels(input, "eeioeo");
     }
-    public string  ReplaceVowels(string input, string withVowels )
+
+    public static string ReplaceVowels(string input, string withVowels)
     {
-        string pattern = "[eeioeo]";
+        string pattern = "\\*";
         Regex regex = new Regex(pattern);
-        return regex.Replace(input, withVowels);
+        foreach (var letter in withVowels)
+        {
+            input = regex.Replace(input, letter.ToString(), 1);
+        }
+
+        return input;
     }
 }
