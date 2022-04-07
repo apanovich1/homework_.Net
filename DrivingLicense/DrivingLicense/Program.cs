@@ -14,13 +14,11 @@ class DrivingLicense
         Console.WriteLine("Insert names of people in line: ");
         var peopleInLine = Console.ReadLine();
 
-        var allNames = String.Join(" ", peopleInLine, name).ToArray();
-        var sortedNames = allNames.Concat(allNames.OrderBy(c => c).ToArray());
+        var allNames = String.Join(" ", peopleInLine, name).Split(" ");
+        var sortedNames = allNames.OrderBy(c => c).ToArray();
+        var indexOfName = Array.IndexOf(sortedNames, name);
 
-        var splittedNames = peopleInLine.Split(" ");
-        var indexOfName = Array.IndexOf(splittedNames, name);
-
-        var time = (100 * indexOfName) / availableAgents;
+        var time = ((indexOfName / availableAgents) +1) * 20;
         Console.WriteLine(time);
     }
 }
