@@ -12,8 +12,8 @@ class Anagram
         string firstW = String.Concat(firstWord.OrderBy(c => c));
         string secondW = String.Concat(secondWord.OrderBy(c => c));
 
-        bool isPresent = secondW.Contains(firstW);
-        Console.WriteLine(isPresent == true ? "This is anagram!" : "This isn't anagram");
+        bool isContain = secondW.Contains(firstW);
+        Console.WriteLine(isContain == true ? "This is anagram!" : "This isn't anagram");
 
     }
 }
