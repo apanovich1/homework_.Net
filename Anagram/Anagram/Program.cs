@@ -1,6 +1,5 @@
 ﻿/*Create a function that takes two strings and determines
  if an anagram of the first string is in the second string*/
-using System.Linq;
 class Anagram
 {
     public static void Main()
