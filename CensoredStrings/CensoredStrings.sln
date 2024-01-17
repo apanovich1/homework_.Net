@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31825.309
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CensoredStrings", "CensoredStrings\CensoredStrings.csproj", "{AFD36FBF-20B7-403B-AE48-CAC15E6DCDCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFD36FBF-20B7-403B-AE48-CAC15E6DCDCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD36FBF-20B7-403B-AE48-CAC15E6DCDCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD36FBF-20B7-403B-AE48-CAC15E6DCDCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD36FBF-20B7-403B-AE48-CAC15E6DCDCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA8EA5E3-D1CD-461F-A3BF-0757297A9593}
+	EndGlobalSection
+EndGlobal
